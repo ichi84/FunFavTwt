@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FunFavTwt</string>
+    <string name="OauthErrorMsg">認証に失敗しました。 </string>
+    <string name="Wait">しばらくお待ちください…</string>
+    <string name="FailedMsg">失敗しました。</string>
+    <string name="progDialogfetTimeline">タイムライン取得中…</string>
+    <string name="UA">FunFav</string>
+
+
+</resources>

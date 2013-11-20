@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/SearchMenu" 
+        android:title="検索" 
+        android:icon="@android:drawable/ic_search_category_default">
+    </item>
+    
+    <item android:id="@+id/SettingMenu"
+        android:title="設定" 
+        android:icon="@android:drawable/ic_menu_preferences">
+    </item>
+    
+    
+    
+
+</menu>

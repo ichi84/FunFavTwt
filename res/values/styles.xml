@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style parent="android:Animation.Dialog" name="Animation.CustomDialog">
+        <!-- 
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+         -->
+    </style>
+
+</resources>

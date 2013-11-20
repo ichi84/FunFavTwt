@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp" >
+
+    <TextView
+        android1:id="@+id/textView5"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="認証"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" >
+
+        <TextView
+            android1:id="@+id/oauthText"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="認証されていません。"
+            android1:textAppearance="?android:attr/textAppearanceSmall"
+            android1:gravity="left"/>
+
+        <Button
+            android1:id="@+id/authButton_setting"
+            style="?android:attr/buttonStyleSmall"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="認証する" 
+            />
+
+    </LinearLayout>
+  
+   　　<View android:id="@+id/Separator" 
+      android:layout_width="wrap_content" 
+      android:background="#DDFFFFFF" 
+      android:layout_height="1dp" 
+      android:layout_marginBottom="16dp">
+	</View>
+    
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="表示"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/checkBox_whiteback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:text="白地背景" 
+        android1:visibility="gone"/>
+
+    <CheckBox
+        android1:id="@+id/checkBox_fav"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="favボタンを表示する" />
+
+    <CheckBox
+        android1:id="@+id/checkBox_retweet"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="リツイートボタンを表示する" />
+    
+    <View android:id="@+id/Separator" 
+      android:layout_width="wrap_content" 
+      android:background="#DDFFFFFF" 
+      android:layout_height="1dp" 
+      android:layout_marginBottom="16dp">
+</View>
+
+    <TextView
+        android1:id="@+id/textView2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="ツイート取得数"
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android1:id="@+id/textView3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="(大きくすると重くなります)" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup_Tweet_num"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content" >
+        
+        <RadioButton
+            android1:id="@+id/tweet_num25"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="25"/>
+        <RadioButton
+            android1:id="@+id/tweet_num50"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="50"/>
+
+        <RadioButton
+            android1:id="@+id/tweet_num100"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="100" />
+
+        <RadioButton
+            android1:id="@+id/tweet_num150"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="150" />
+    </RadioGroup>
+
+    <View android:id="@+id/Separator" 
+      android:layout_width="wrap_content" 
+      android:background="#DDFFFFFF" 
+      android:layout_height="1dp" 
+      android:layout_marginBottom="16dp">
+	</View>
+
+    <TextView
+        android1:id="@+id/textView4"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="省電力制御"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android1:id="@+id/checkBox_displayon"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="ストリーム中は画面を消灯しない" />
+ 
+</LinearLayout>

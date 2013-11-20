@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="0dp" android:background="@color/white" android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/userIconView1"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_noone" android:layout_margin="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id_TextView"
+                android:layout_marginLeft="4dp"
+                android:textSize="10dp" 
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+                
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="id_TextView"
+                    android:textSize="10dp" 
+                    android:textColor="@color/black"/>
+            
+            	<ImageView
+                	android:id="@+id/status_image"
+          	      android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+                	android:scaleType="fitXY"
+                	android:src="@drawable/ic_secure" />
+                
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/Tweet_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|fill_horizontal"
+        android:text="Tweet_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="14dp" android:layout_margin="4dp"/>
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/retweetButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_retweet" />
+
+            <ImageButton
+                android:id="@+id/favImageButton1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/btn_star_big_off" />
+
+    </LinearLayout>
+
+</LinearLayout>

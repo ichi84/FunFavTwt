@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/userIconView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="4dp"
+                android:src="@drawable/icon_noone" android:layout_marginLeft="20dp" android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:id="@+id/id_textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/status_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&gt; IDページへ"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp" 
+        android:gravity="left" android:padding="12dp"/>
+    <Button
+        android:id="@+id/reply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> 返信する"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp"
+        android:gravity="left"
+         android:padding="12dp"/>
+
+    　　　　　<Button
+        android:id="@+id/rt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> Retweet"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp"
+        android:gravity="left"
+        android:padding="12dp" />
+   		
+   		<Button
+        android:id="@+id/qt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> 非公式RT"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp"
+        android:gravity="left"
+        android:padding="12dp" />
+   		
+   		<Button
+        android:id="@+id/DM_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> DMを送る"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp"
+        android:gravity="left"
+         android:padding="12dp" />
+   		    
+    	<Button
+        android:id="@+id/follow_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> フォローする"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp"
+        android:gravity="left"
+         android:padding="12dp" />
+    
+        <Button
+        android:id="@+id/unfollow_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> フォロー解除"
+        android:background="@null" 
+        android:textColor="@color/white" 
+        android:textSize="24dp"
+        android:gravity="left"
+         android:padding="12dp" />
+   		
+
+    
+</LinearLayout>

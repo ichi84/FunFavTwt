@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" android:padding="0dp">
+
+    
+
+    
+    <ImageButton
+        	android:id="@+id/userIconView1"
+        	android:layout_width="46dp"
+        	android:layout_height="46dp"
+        	android:src="@drawable/icon_noone"
+			android:background="@null" 
+			android:cropToPadding="false" 
+			android:scaleType="fitXY" 
+			android:drawingCacheQuality="high"/>
+    	
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="left">
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id_TextView"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id_TextView"
+                    android:textSize="10dp" 
+                    android:layout_marginLeft="4dp"/>
+
+                <ImageView
+                    android:id="@+id/status_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_secure" android:scaleType="fitXY"/>
+
+            
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right" >
+                
+               	    <TextView
+                    android:id="@+id/time_short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id_TextView"
+                    android:textSize="10dp" 
+                    />
+			</LinearLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tweetTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04"
+            android:text="TweetTextBox" 
+            android:ellipsize="none" 
+            android:focusable="true" 
+            android:focusableInTouchMode="false" 
+            android:autoLink="web"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/textView_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="source"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="time_TextView"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/retweet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="right">
+
+            <ImageView
+                android:id="@+id/retweeter_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_contact_picture" />
+
+            <TextView
+                android:id="@+id/retweeter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" android:textSize="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/favImageButton1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/btn_star_big_off" />
+
+        <ImageButton
+            android:id="@+id/retweetButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_retweet" android:visibility="invisible"/>
+    </LinearLayout>
+
+</LinearLayout>
